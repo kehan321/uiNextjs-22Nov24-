@@ -14,13 +14,21 @@ const config: Config = {
       },
       container: {
         center: true,
-        padding: '2rem', // Adds padding inside the container
+        padding: {
+          DEFAULT: "15px",
+          sm: "15px",
+          lg: "15px",
+          xl: "0",
+          "2xl": "0",
+        },
         screens: {
-          color: 'red',
-          sm: '100%',    // Full width on small screens
-          md: '750px',   // Max width of 750px on medium screens
-          lg: '900px',
-        }
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1280px",
+        },
+      
       },
     },
   },
